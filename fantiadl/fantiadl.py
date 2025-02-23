@@ -44,7 +44,7 @@ dl_group.add_argument("-p", "--download-paid-fanclubs", action="store_true", des
 dl_group.add_argument("-n", "--download-new-posts", dest="download_new_posts", metavar="#", type=int, help="download a specified number of new posts from your fanclub timeline")
 dl_group.add_argument("-d", "--download-month", dest="month_limit", metavar="%Y-%m", help="download posts only from a specific month, e.g. 2007-08 (excludes -n)")
 dl_group.add_argument("--exclude", dest="exclude_file", metavar="EXCLUDE_FILE", help="file containing a list of filenames to exclude from downloading")
-dl_group.add_argument("--delay", dest="delay", type=float, default=3, help="Random delay range between requests (seconds), Set 0 to disable. Default: 3")
+dl_group.add_argument("--delay", dest="delay", type=float, default=1.5, help="Random delay range between requests (seconds), Set 0 to disable. Default: 1.5")
 dl_group.add_argument("--retry-wait", dest="retry_wait", type=int, default=180, help="Wait time for errors (seconds), Default: 180")
 
 
